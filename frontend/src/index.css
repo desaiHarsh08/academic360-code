@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.active {
+    font-weight: 900;
+}
+
+#loading {
+    position: absolute;
+}
+
+#loading-bar {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all;
+    animation: loadingAnimation 1s ease-in-out infinite;
+}
+
+@keyframes loadingAnimation {
+    from {
+        transform: translateX(-10vw);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
